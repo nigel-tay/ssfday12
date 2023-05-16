@@ -13,7 +13,8 @@ public class DemoController {
     public HelloWorld getHome(@PathVariable String name){
 
 
-        //return "Hello world";
+        // Gets the name from the URI through the path variable and passes it into the HelloWorld instance
+        //  In turn returning a new HelloWorld object
         return new HelloWorld(name);
     }
     
